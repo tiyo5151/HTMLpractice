@@ -6,37 +6,50 @@
 </head>
 <body>
   <h1>僕の仲間募集フォーム</h1>
-
-  <dl>
-    <dt>お名前</dt>
-    <dd>
-
-    </dd>
-    <dt>メールアドレス</dt>
-    <dd>
-
-    </dd>
-    <dt>性別</dt>
-    <dd>
-      <ul>
-        <li>男性</li>
-        <li>女性</li>
-      </ul>
-    </dd>
-    <dt>出来ること（複数選択可）</dt>
-    <dd>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>PHP</li>
-        <li>SQL</li>
-        <li>Photoshop</li>
-        <li>Illustrator</li>
-      </ul>
-    </dd>
-  </dl>
-  <p>送信する</p>
-
+  <form action="receive.html" method="post">
+    <dl>
+      <dt>お名前</dt>
+      <dd>
+        <input type="text" name="your_name">
+      </dd>
+      <dt>メールアドレス</dt>
+      <dd>
+        <input type="text" name="your_email">
+      </dd>
+      <dt>性別</dt>
+      <dd>
+        <ul>
+          <li><input type="radio" name="gender" value="男">男性</li>
+          <li><input type="radio" name="gender" value="女">女性</li>
+        </ul>
+      </dd>
+      <dt>出来ること（複数選択可）</dt>
+      <dd>
+        <ul>
+          <li><input type="checkbox" name="skill" value="HTML">HTML</li>
+          <li><input type="checkbox" name="skill" value="CSS">CSS</li>
+          <li><input type="checkbox" name="skill" value="JavaScript">JavaScript</li>
+          <li><input type="checkbox" name="skill" value="PHP">PHP</li>
+          <li><input type="checkbox" name="skill" value="SQL">SQL</li>
+          <li><input type="checkbox" name="skill" value="Photoshop">Photoshop</li>
+          <li><input type="checkbox" neme="skill" value="Illustrator">Illustrator</li>
+        </ul>
+      </dd>
+      <dt>希望する職種</dt>
+      <dd>
+        <select name="job">
+          <option value="webdirector">webディレクター</option>
+          <option value="webdesigner">webデザイナー</option>
+          <option value=""webprogramer>webプログラマー</option>
+          <option value="frontendenginer">フロントエンドエンジニア</option>
+        </select>
+      </dd>
+      <dt>つぶやき</dt>
+      <dd>
+        <textarea name="mutter" cols="40" rows="8"></textarea>
+      </dd>
+    </dl>
+    <p><input type="submit" value="つぶやく"></p>
+  </form>
 </body>
 </html>

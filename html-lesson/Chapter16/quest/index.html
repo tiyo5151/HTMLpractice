@@ -6,37 +6,39 @@
 </head>
 <body>
   <h1>お問い合わせフォーム</h1>
-
-  <dl>
-    <dt>お名前</dt>
-    <dd>
-
-    </dd>
-    <dt>メールアドレス</dt>
-    <dd>
-
-    </dd>
-    <dt>お問い合わせ店舗</dt>
-    <dd>
-      <ul>
-        <li>東京本店</li>
-        <li>大阪店</li>
-        <li>福岡店</li>
-      </ul>
-    </dd>
-    <dt>お問い合わせ種別</dt>
-    <dd>
-      製品に関するお問い合わせ
-      当社に関するお問い合わせ
-      求人に関するお問い合わせ
-      その他のお問い合わせ
-    </dd>
-    <dt>お問い合わせ内容</dt>
-    <dd>
-
-    </dd>
-  </dl>
-  <p>入力確認画面へ</p>
-
+  <form action="receive.html" method="post">
+    <dl>
+      <dt>お名前</dt>
+      <dd>
+        <input type="text" name="your_name">
+      </dd>
+      <dt>メールアドレス</dt>
+      <dd>
+        <input type="text" name="your_email">
+      </dd>
+      <dt>お問い合わせ店舗</dt>
+      <dd>
+        <ul>
+          <li><input type="radio" name="shop" value="東京本店">東京本店</li>
+          <li><input type="radio" name="shop" value="大阪店">大阪店</li>
+          <li><input type="radio" name="shop" value="福岡店">福岡店</li>
+        </ul>
+      </dd>
+      <dt>お問い合わせ種別</dt>
+      <dd>
+        <select name="type">
+          <option value="製品に関するお問い合わせ">製品に関するお問い合わせ</option>
+          <option value="当社に関するお問い合わせ">当社に関するお問い合わせ</option>
+          <option value="求人に関するお問い合わせ">求人に関するお問い合わせ</option>
+          <option value="その他のお問い合わせ">その他のお問い合わせ</option>
+        </select>
+      </dd>
+      <dt>お問い合わせ内容</dt>
+      <dd>
+        <textarea name="inquiry" cols="30" rows="10"></textarea>
+      </dd>
+    </dl>
+    <p><input type="submit" value="入力確認画面へ"></p>
+  </form>
 </body>
 </html>
