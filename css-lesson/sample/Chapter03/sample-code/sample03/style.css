@@ -1,0 +1,11 @@
+body {
+  border: solid;
+}
+
+p {
+  border: inherit;
+}
+
+em {
+  border: inherit;
+}

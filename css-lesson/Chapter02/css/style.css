@@ -1,0 +1,26 @@
+/* タイプセレクタ */
+li {
+    color:green;
+}
+
+/* クラスセレクタ */
+.music {
+    color: orange;
+}
+
+/* idセレクタ */
+#bob  {
+    color: brown;
+}
+
+strong {
+    color: darkred;
+}
+
+.small {
+    font-size: 12px;
+}
+
+#heading {
+    color: orange;
+}
